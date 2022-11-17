@@ -8,6 +8,8 @@ else
 	&> linuxsetup.log #if no then add the error in the linuxsetup.log
 fi
 
+mkdir -p ~/.TRASH
+
 FILE=~/.vimrc
 if [ -e "$FILE" ]; then #if the .vimrc file in home directory exists
 	mv ~/.vimrc ~/.bup_vimrc #yes then rename and add complete announce into the linuxsetup.log
